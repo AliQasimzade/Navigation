@@ -1,1 +1,1 @@
-
+let str = "My name is Ali";
