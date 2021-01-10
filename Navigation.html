@@ -22,11 +22,11 @@
 			</div>
 
 			<div class="menu-bars">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
     Courses
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="custom-listCourse">
+    <li class="list1">
 		<h2>Courses by Subject</h2>
 		<button>View All Courses</button>
 	</li>
@@ -45,7 +45,8 @@
 			</li>
 			<li>
 				<a href="">Economics & Finance</a>
-				<a href="">Education & Teacher Training</a>
+				<a href="">Education & Teacher <br>
+					Training</a>
 				<a href="">Electronics</a>
 				<a href="">Energy & Earth Sciences</a>
 				<a href="">Engineering</a>
@@ -77,44 +78,44 @@
 	</li>
   </ul>
   
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
    Programs & Degrees
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li>
-		<h2>Pathways for your advancement</h2>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="custom-listCourse" onclick="myFunc()">
+    <li class="list1">
+		<h3>Pathways for your advancement</h3>
 		<button>Compare Programs</button>
 	</li>
     <li>
-		<h3>MicroBachelors Program</h3>
+		<h4>MicroBachelors Program</h4>
 		<p>Undergraduate-level, for career advancement or a degree path</p>
 	</li>
 	<li>
-		<h3>MicroMasters Program</h3>
+		<h4>MicroMasters Program</h4>
 		<p>Graduate-level, for career advancement or a degree path</p>
 	</li>
 	<li>
-		<h3>Professional Certificate</h3>
+		<h4>Professional Certificate</h4>
 		<p>From employers or universities to build today's in-demand skills</p>
 	</li>
     <li>
-		<h3>XSeries</h3>
+		<h4>XSeries</h4>
 		<p>Series of courses for a deep understanding of a topic</p>
 	</li>
 	<li>
-		<h3>Online Master's Degree</h3>
+		<h4>Online Master's Degree</h4>
 		<p>Top-ranked programs, affordable, and fully online</p>
 	</li>
 	<li>
-		<h3>Executive Education/h3>
+		<h4>Executive Education</h4>
 		<p>Courses designed for business leaders for developing strategic skills</p>
 	</li>
   </ul>
 
-  <button>Schools & Partners</button>
-  <button>edX for Business</button>
+  <button class="custom-btn">Schools & Partners</button>
+  <button class="custom-btn">edX for Business</button>
 			</div>
-			<div class="search-bar">
+			<div class="search-bars">
 				<ul>
 					<li><i class="fas fa-search"></i></li>
 					<li>Sign In</li>
