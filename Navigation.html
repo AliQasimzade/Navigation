@@ -13,15 +13,20 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
 		<div class="contain">
+			<label for="" id="openMenuButton"><i class="fas fa-bars"></i></label>
 			<div class="image">
 				<img src="./assets/edx-logo.svg" alt="">
 			</div>
 
-			<div class="menu-bars">
+			<div class="menu-bars" id="menu">
+				<label for="" id="closeMenuButton"><i class="fas fa-times" style="color: #fafafafa; margin: 5px;"></i></label>
+				<div class="sign">
+					<a href="">Sign In</a>
+					<a href="">Register</a>
+				</div>
       <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
     Courses
   </button>
@@ -83,7 +88,7 @@
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="custom-listCourse" onclick="myFunc()">
     <li class="list1">
-		<h3>Pathways for your advancement</h3>
+		<h2>Pathways for your advancement</h2>
 		<button>Compare Programs</button>
 	</li>
     <li>
@@ -123,6 +128,7 @@
 				</ul>
 			</div>
 		</div>
-		<script src="./Navigation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>		
+<script src="./Navigation.js"></script>
 	</body>
 </html>

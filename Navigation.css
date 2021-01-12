@@ -12,7 +12,6 @@ body {
   body .contain {
     width: 100%;
     height: 63px;
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,9 +21,15 @@ body {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
+    body .contain #openMenuButton {
+      display: none; }
     body .contain .image {
       width: 73px;
       height: 43px; }
+    body .contain #closeMenuButton {
+      display: none; }
+    body .contain .sign {
+      display: none; }
     body .contain .custom-btn {
       border: none;
       background: none;
@@ -103,7 +108,8 @@ body {
             margin: 3px; }
           body .contain #custom-listCourse li:nth-child(2) ul li a:hover {
             text-decoration: underline; }
-    body .contain .search-bars {
+    body .contain .search-bars ul {
+      height: 63px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -112,9 +118,18 @@ body {
       align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
-      body .contain .search-bars ul {
-        height: 63px;
+      justify-content: center;
+      margin: 0;
+      padding-bottom: 10px; }
+      body .contain .search-bars ul li {
+        margin: 10px 0px 0px 10px;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 5px; }
+      body .contain .search-bars ul li:nth-child(1) {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -124,29 +139,112 @@ body {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; }
-        body .contain .search-bars ul li {
-          margin: 10px 0px 0px 10px;
-          font-size: 18px;
-          cursor: pointer;
-          padding: 5px; }
-        body .contain .search-bars ul li:nth-child(1) {
-          border-radius: 50%;
-          width: 30px;
-          height: 30px;
+      body .contain .search-bars ul li:nth-child(1):hover {
+        background-color: #001b1e;
+        color: #fff; }
+      body .contain .search-bars ul li:not(:nth-child(1)):hover {
+        background-color: #f8f9fa; }
+      body .contain .search-bars ul li:nth-child(3):hover {
+        -webkit-transform: skew(-10deg);
+        transform: skew(-10deg); }
+  @media only screen and (max-width: 1107px) {
+    body .contain {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+      body .contain #openMenuButton {
+        display: block; }
+      body .contain .menu-bars {
+        width: 0;
+        height: 50vh;
+        left: 0;
+        opacity: 0;
+        overflow-x: hidden;
+        -webkit-transition: 300ms;
+        transition: 300ms;
+        position: absolute;
+        top: 63px;
+        border: 1px solid #001b1e;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #001b1e; }
+        body .contain .menu-bars #closeMenuButton {
+          display: block; }
+        body .contain .menu-bars .sign {
+          display: block;
+          margin: 10px 0 0px 0px;
+          width: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
-        body .contain .search-bars ul li:nth-child(1):hover {
-          background-color: #001b1e;
-          color: #fff; }
-        body .contain .search-bars ul li:not(:nth-child(1)):hover {
-          background-color: #f8f9fa; }
-        body .contain .search-bars ul li:nth-child(3):hover {
-          -webkit-transform: skew(-10deg);
-          transform: skew(-10deg); }
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+          body .contain .menu-bars .sign a {
+            text-decoration: none;
+            color: #001b1e;
+            border: 1px solid #fff;
+            padding: 5px 5px 5px 0;
+            width: 30%;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+          body .contain .menu-bars .sign a:hover {
+            background-color: #fff;
+            color: #001b1e; }
+        body .contain .menu-bars #custom-listCourse {
+          display: none !important; }
+        body .contain .menu-bars .custom-btn {
+          font-size: 17px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          border-bottom: 1px solid #001b1e;
+          height: 30px;
+          color: #fff;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          margin-top: 20px; }
+        body .contain .menu-bars .custom-btn:hover {
+          text-decoration: underline; }
+        body .contain .menu-bars .custom-btn::after {
+          content: '';
+          position: absolute;
+          opacity: 0;
+          visibility: hidden; }
+      body .contain .search-bars ul li:not(:nth-child(1)) {
+        display: none; } }
