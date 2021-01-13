@@ -1,0 +1,24 @@
+{
+  "name": "navigation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Navigation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server . --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliQasimzade/Navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliQasimzade/Navigation/issues"
+  },
+  "homepage": "https://github.com/AliQasimzade/Navigation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
