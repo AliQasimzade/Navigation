@@ -162,7 +162,6 @@ body {
         display: block; }
       body .contain .menu-bars {
         width: 0;
-        height: 50vh;
         left: 0;
         opacity: 0;
         overflow-x: hidden;
