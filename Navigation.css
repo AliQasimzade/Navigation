@@ -76,8 +76,8 @@ body {
         body .contain #custom-listCourse .list1 button {
           border: 1px solid #001b1e;
           background: none;
-          width: 150px;
-          padding: 5px; }
+          width: 160px;
+          padding: 7px; }
         body .contain #custom-listCourse .list1 button:hover {
           background-color: #001b1e;
           color: #fff; }
