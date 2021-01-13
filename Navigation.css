@@ -185,7 +185,8 @@ body {
         flex-direction: column;
         background-color: #001b1e; }
         body .contain .menu-bars #closeMenuButton {
-          display: block; }
+          display: block;
+          font-size: 19px; }
         body .contain .menu-bars .sign {
           display: block;
           margin: 10px 0 0px 0px;
@@ -223,6 +224,7 @@ body {
         body .contain .menu-bars .custom-btn {
           font-size: 17px;
           padding: 0;
+          padding-left: 5px;
           margin: 0;
           width: 100%;
           border-bottom: 1px solid #001b1e;
