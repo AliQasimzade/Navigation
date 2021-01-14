@@ -189,7 +189,7 @@ body {
       body .contain #openMenuButton {
         display: block; }
       body .contain img {
-        padding-left: 40px; }
+        padding-left: 30px; }
       body .contain .menu-bars {
         width: 0;
         left: 0;
@@ -279,4 +279,6 @@ body {
           opacity: 0;
           visibility: hidden; }
       body .contain .search-bars ul li:not(:nth-child(1)) {
+        display: none; }
+      body .contain .custom-darkMode {
         display: none; } }
